@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css");
+@import url("https://unpkg.com/swiper/swiper-bundle.min.css");
+:root{
+  --app-color:#e4545c;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+  
+  }
+  .fw-900{
+    font-weight: 900 !important;
+  }
+  h1::before{
+    content: " ";
+    position: absolute;
+    left: 120%;
+    width: 120%;
+    height:100%;
+    background: linear-gradient(90deg , transparent 0%, #f0eee4 10%, #f0eee4 100%);
+    animation: animate 2s linear forwards;
+  }
+
+  /* h1::before{
+    content: " ";
+    position: absolute;
+    left: 120%;
+    width: 120%;
+    height:100%;
+    background: linear-gradient(90deg , transparent 0%, black 10%, black 100%);
+    animation: animate 3s linear forwards;
+  } */
+  
+@keyframes animate 
+{
+  0%{
+    left: -20%;
+  }  
+ 
+  100%{
+    left: 120%;
+  }
+}
+  
+.popImg{
+  z-index: 1 !important;
+}
+.blur{
+  filter: blur(3px) !important;
+}
+
+.rounded-3{
+  border-radius: 1.5rem !important;
+}
+.swiper-pagination-bullet-active{
+  background-color: var(--app-color) !important;
+}
+.fs-6{
+  font-size: 11px !important;
+}
+.text-danger{
+  color: var(--app-color) !important;
+}
+.text-justify{
+  text-align: justify !important;
+}
+.bg-footer{
+  background-color: #2B2828 !important;
+}
+
+#more {display: none;}
+
+.card{
+  height: 50vh !important;
+}
+@media screen and (min-width:320px) and (max-width:481px) {
+  .card{
+    max-height: 50vh !important;
+  }
+  .mobile{
+    font-size: 4.5rem !important;
+  }
+}
+@media screen and (min-width:481px) and (max-width:768px) {
+  .card{
+    height: 40vh !important;
+  }
+  .mobile{
+    font-size: 5rem !important;
+  }
+}
+@media screen and (min-width:769px) and (max-width:1024px) {
+  .card{
+    height: 30vh !important;
+  }
+}
+
+.background-img{
+    background: linear-gradient(rgba(70, 67, 67, 0.7), rgba(70, 67, 67, 0.7)), url("../images/partners.jpg");
+    backdrop-filter: blur(9px);
+}
+.banner-img{
+  background-image: url('../images/banner.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh !important;
+}
