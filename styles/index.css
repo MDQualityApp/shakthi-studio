@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,800;0,900;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css");
 @import url("https://unpkg.com/swiper/swiper-bundle.min.css");
 :root{
@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Raleway', sans-serif;
   overflow-x: hidden;
   
   }
@@ -52,7 +52,7 @@ body {
 }
 
 .rounded-3{
-  border-radius: 1.5rem !important;
+  border-radius: 1.7rem !important;
 }
 .swiper-pagination-bullet-active{
   background-color: var(--app-color) !important;
@@ -69,42 +69,105 @@ body {
 .bg-footer{
   background-color: #2B2828 !important;
 }
-
-#more {display: none;}
-
-.card{
-  height: 50vh !important;
-}
-@media screen and (min-width:320px) and (max-width:481px) {
-  .card{
-    max-height: 50vh !important;
-  }
-  .mobile{
-    font-size: 4.5rem !important;
-  }
-}
-@media screen and (min-width:481px) and (max-width:768px) {
-  .card{
-    height: 40vh !important;
-  }
-  .mobile{
-    font-size: 5rem !important;
-  }
-}
-@media screen and (min-width:769px) and (max-width:1024px) {
-  .card{
-    height: 30vh !important;
-  }
-}
-
 .background-img{
-    background: linear-gradient(rgba(70, 67, 67, 0.7), rgba(70, 67, 67, 0.7)), url("../images/partners.jpg");
-    backdrop-filter: blur(9px);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/partners.jpg");
+  backdrop-filter: blur(9px);
 }
 .banner-img{
-  background-image: url('../images/banner.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh !important;
+background-image: url('../images/banner.jpg');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 100vh !important;
 }
+
+.fw-500{
+font-weight: 500 !important;
+}
+.fw-600{
+font-weight: 600 !important;
+font-style: normal;
+}
+.fw-700{
+font-weight: 700 !important;
+}
+.fw-400{
+font-weight: 400 !important;
+}
+#more {
+  display: none;
+}
+
+.mobile{
+  font-size: 8rem !important;
+}
+
+
+/******************media queries********************/
+
+
+
+
+
+/* @media screen and (max-width:450px) {
+  .card{
+    height:63vh !important;
+    font-size:13px !important;
+  }
+  .mobile{
+    font-size:12px !important;
+  }
+
+} */
+
+@media screen  and (max-width:399px) {
+  .card{
+   
+    font-size:13px !important;
+  }
+  .mobile{
+    font-size: 4rem !important;
+
+}
+}
+
+@media screen and (min-width:400px) and (max-width:735px) {
+  .card{
+    
+    font-size:13px !important;
+  }
+  .mobile{
+    font-size: 4rem !important;
+  }
+  .banner-img{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/banner-md.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh !important;
+    }
+ 
+}
+@media screen and (min-width:736px) and  (max-width:1430px){
+  .card{
+    
+    font-size:14px !important;
+  }
+  .mobile{
+    font-size: 6rem !important;
+  }
+}
+
+/* @media screen and (min-width:1026px) and (max-width:1450px) {
+  .card{
+    height: 70vh !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+  }
+  .mobile{
+    font-size: 8rem !important;
+  }
+
+} */
+
+
