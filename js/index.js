@@ -11,6 +11,7 @@ window.onload=function(){
 }
 
 var swiper = new Swiper(".mySwiper", {
+  
   loop: true,
   navigation: {
     nextEl: ".next",
